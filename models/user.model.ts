@@ -33,4 +33,4 @@ UserSchema.pre("save", async function (next) {
 })
 // this will check wether the modal has a user or not if not then it will create a new model
 const User = models?.User || model("User", UserSchema)
-export default  User;
+export default User;
