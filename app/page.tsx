@@ -12,15 +12,15 @@ export default function Home() {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const data = await apiClient.getVideos
+        const data = await apiClient.getVideos()
         setVideos(data)
       } catch (error) {
-        console.error("error fetching videos ",error)
+        console.error("error fetching videos ", error)
       }
     }
 
     fetchVideos()
-  })
+  }, [])
 
   return (
     <div></div>
